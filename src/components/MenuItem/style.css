@@ -1,0 +1,106 @@
+.menu-item {
+  align-items: center;
+  border-radius: 2px;
+  display: flex;
+  gap: 2px;
+  justify-content: flex-end;
+  padding: 4px 8px 4px 0px;
+  position: relative;
+  width: 250px;
+}
+
+.menu-item .wrapper {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+}
+
+.menu-item .delete-dustbin {
+  height: 16px !important;
+  position: relative !important;
+  width: 16px !important;
+}
+
+.menu-item .frame {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 4px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.menu-item .menu-item-wrapper {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 8px;
+  position: relative;
+}
+
+.menu-item .text-wrapper {
+  font-family: var(--body-body-font-family);
+  font-size: var(--body-body-font-size);
+  font-style: var(--body-body-font-style);
+  font-weight: var(--body-body-font-weight);
+  letter-spacing: var(--body-body-letter-spacing);
+  line-height: var(--body-body-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.menu-item.default {
+  background-color: var(--base-colors-color-neutral-00);
+}
+
+.menu-item.selected.disabled-true {
+  background-color: var(--eds-semantic-color-surface-surface);
+}
+
+.menu-item.hover.destructive-false {
+  background-color: var(--eds-semantic-color-surface-surface-hover);
+}
+
+.menu-item.hover.destructive-true.disabled-true {
+  background-color: var(--eds-semantic-color-surface-surface);
+}
+
+.menu-item.hover.destructive-true.disabled-false {
+  background-color: var(--eds-semantic-color-surface-surface-error-hover);
+}
+
+.menu-item.disabled-false.destructive-true.selected {
+  background-color: var(--eds-semantic-color-surface-surface-error-selected);
+}
+
+.menu-item.destructive-false.disabled-false.selected {
+  background-color: var(--eds-semantic-color-surface-surface-selected);
+}
+
+.menu-item.disabled-true .text-wrapper {
+  color: var(--eds-semantic-color-text-text-disabled);
+}
+
+.menu-item.destructive-false.disabled-false .text-wrapper {
+  color: var(--eds-semantic-color-text-text);
+}
+
+.menu-item.default.disabled-false .text-wrapper {
+  color: var(--eds-semantic-color-text-text);
+}
+
+.menu-item.hover.destructive-true.disabled-false .text-wrapper {
+  color: var(--eds-semantic-color-text-text-critical);
+}
+
+.menu-item.disabled-false.destructive-true.selected .text-wrapper {
+  color: var(--eds-semantic-color-text-text-critical);
+}

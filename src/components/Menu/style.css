@@ -1,0 +1,19 @@
+.menu {
+  align-items: center;
+  background-color: var(--eds-semantic-color-surface-surface);
+  border-radius: 4px;
+  box-shadow: var(--shadow-medium);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+  width: 250px;
+}
+
+.menu .item {
+  align-self: stretch !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+}
